@@ -1,0 +1,24 @@
+{
+  "name": "Supabase",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "vscode",
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [],
+  "initializeCommand": [".devcontainer/docker-init"],
+  "postCreateCommand": "",
+  "postStartCommand": "",
+  "settings": {
+    "editor.formatOnSave": true
+  },
+  "extensions": [
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "ms-azuretools.vscode-docker",
+    "orta.vscode-jest",
+    "rangav.vscode-thunder-client",
+    "tamasfe.even-better-toml"
+  ]
+}
