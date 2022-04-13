@@ -16,6 +16,7 @@
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
     "ms-azuretools.vscode-docker",
     "orta.vscode-jest",
     "rangav.vscode-thunder-client",
