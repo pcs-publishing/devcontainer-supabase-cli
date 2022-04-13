@@ -8,7 +8,7 @@ volumes:
 
 networks:
   default:
-    name: ${COMPOSE_PROJECT_NAME:-workspace}-net
+    name: ${COMPOSE_PROJECT_NAME:-supabase}-net
 
 services:
   vscode:
@@ -19,6 +19,7 @@ services:
         - VARIANT=${NODE_VERSION:-16}-${OS_VERSION:-bullseye}
         - FLAVOUR=${BASE_LANGUAGE:-typescript}
       dockerfile: .devcontainer/Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME:-supabase}-vscode
     command: sleep infinity
     environment:
       - AWS_ACCESS_KEY_ID
@@ -27,7 +28,7 @@ services:
     networks:
       - default
     volumes:
-      - ..:/workspace
+      - ..:/supabase
       - ~/.ssh:/root/.ssh
       - /var/run/docker.sock:/var/run/docker.sock
       - vscode-extensions:/root/.vscode-server/extensions

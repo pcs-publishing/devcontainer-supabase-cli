@@ -3,7 +3,7 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "vscode",
   "shutdownAction": "stopCompose",
-  "workspaceFolder": "/workspace",
+  "workspaceFolder": "/supabase",
   "forwardPorts": [],
   "initializeCommand": [".devcontainer/docker-init"],
   "postCreateCommand": "",

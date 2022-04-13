@@ -62,4 +62,4 @@ RUN npm install -g \
   npm \
   yarn
 
-WORKDIR /workspace
+WORKDIR /supabase
