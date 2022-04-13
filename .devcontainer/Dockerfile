@@ -57,4 +57,9 @@ RUN wget -q -O /tmp/supabase.deb https://github.com/supabase/cli/releases/downlo
   && dpkg -i /tmp/supabase.deb \
   && rm /tmp/supabase.deb
 
+# [Optional] install more global node packages.
+RUN npm install -g \
+  npm \
+  yarn
+
 WORKDIR /workspace
